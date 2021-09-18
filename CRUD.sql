@@ -1,7 +1,7 @@
 -- Insert Rows into a Table
 begin transaction
 
-USE [LinenandBird]
+USE [LinenandBird] -- Database Reference for file
 GO
 
 select *  from Orders
@@ -21,13 +21,13 @@ GO
 
 select *  from Orders
 
-rollback 
--- commit 
+rollback -- rollsback the transaction just inserted so it is not added to the DB.
+-- commit -- this commit command commits the transaction to the DB.
 
 -- Remove Rows from a Table
 
 Delete 
 From Orders
-output deleted. *
-where price = 120
+output deleted. * -- outputs the deleted row or data
+where price = 120 -- filters the Delete command to specific ID's.
 -- where id = '3BCF41CC-4BF3-4579-95DE-464A9DAEB9DD'
