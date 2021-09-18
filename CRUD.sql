@@ -24,4 +24,6 @@ select *  from Orders
 
 Delete 
 From Orders
+output deleted. *
 where price = 120
+-- where id = '3BCF41CC-4BF3-4579-95DE-464A9DAEB9DD'
