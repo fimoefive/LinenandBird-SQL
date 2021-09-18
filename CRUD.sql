@@ -1,4 +1,5 @@
 -- Insert Rows into a Table
+begin transaction
 
 USE [LinenandBird]
 GO
