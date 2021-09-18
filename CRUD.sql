@@ -1,4 +1,4 @@
--- insert rows into a table
+-- Insert Rows into a Table
 
 USE [LinenandBird]
 GO
@@ -19,3 +19,9 @@ output inserted. * -- output command that only shows what is being inserted into
 GO
 
 select *  from Orders
+
+-- Remove Rows from a Table
+
+Delete 
+From Orders
+where price = 120
