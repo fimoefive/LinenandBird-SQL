@@ -22,5 +22,16 @@ CREATE TABLE dbo.Hats
 create table dbo.Orders (
 Id uniqueidentifier NOT NULL Primary Key default(newid()),
 BirdId uniqueidentifier NOT NULL,
-HatId uniqueidentifier NOT NULL
+HatId uniqueidentifier NOT NULL,
+Price decimal(18, 2),
+CONSTRAINT FK_BirdId_BirdsID FOREIGN KEY (BirdId)
+	REFERENCES dbo.Birds (Id),
+CONSTRAINT FK_HatId_HatsID FOREIGN KEY (HatId)
+	REFERENCES dbo.Hats (Id)
 )
+
+select *
+from Orders o
+	join Hats h
+		on h.Id = o.HatId
+	join 
