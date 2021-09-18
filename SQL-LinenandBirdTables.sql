@@ -34,4 +34,5 @@ select *
 from Orders o
 	join Hats h
 		on h.Id = o.HatId
-	join 
+	join Birds b
+		on b.Id = o.BirdId
