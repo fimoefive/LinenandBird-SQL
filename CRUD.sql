@@ -21,6 +21,9 @@ GO
 
 select *  from Orders
 
+rollback 
+-- commit 
+
 -- Remove Rows from a Table
 
 Delete 
